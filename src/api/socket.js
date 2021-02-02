@@ -4,10 +4,10 @@ import { v4 as uuid } from "uuid";
 
 const ENDPOINT = "https://liquid-portal-api.herokuapp.com/";
 const socket = socketIOClient(ENDPOINT);
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 3001;
 const myPeer = new Peer(undefined, {
   secure: true,
-  host: "liquid-portal.herokuapp.com",
+  host: "https://liquid-portal.herokuapp.com/",
   port: port,
 });
 const peers = {};
