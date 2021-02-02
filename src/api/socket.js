@@ -5,8 +5,10 @@ const ENDPOINT = "https://liquid-portal-api.herokuapp.com/";
 const socket = socketIOClient(ENDPOINT);
 const port = process.env.PORT || 3001;
 const myPeer = new Peer(undefined, {
-  host: "/",
-  port: String(port),
+  secure: true,
+  host: "https://liquid-portal.herokuapp.com/",
+  port: 443,
+  path: "/",
 });
 const peers = {};
 //
