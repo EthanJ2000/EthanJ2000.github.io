@@ -1,7 +1,7 @@
 import socketIOClient from "socket.io-client";
 import Peer from "peerjs";
 
-const ENDPOINT = "http://localhost:8081/";
+const ENDPOINT = "https://liquid-portal-api.herokuapp.com/";
 const socket = socketIOClient(ENDPOINT);
 const port = process.env.PORT || 3001;
 const myPeer = new Peer(undefined, {
