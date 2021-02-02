@@ -6,7 +6,7 @@ const socket = socketIOClient(ENDPOINT);
 const port = process.env.PORT || 3001;
 const myPeer = new Peer(undefined, {
   secure: true,
-  host: "liquid-portal.herokuapp.com",
+  host: "https://liquid-portal.herokuapp.com",
   port: 443,
   path: "/",
 });
