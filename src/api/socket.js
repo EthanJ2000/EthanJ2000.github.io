@@ -14,6 +14,7 @@ const peers = {};
 //
 
 export const onRoomEntered = (roomId, userId, videoGrid) => {
+  console.log(port);
   myPeer.on("open", (id) => {
     socket.emit("join-room", roomId, id);
   });
