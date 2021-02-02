@@ -1,13 +1,14 @@
 import socketIOClient from "socket.io-client";
 import Peer from "peerjs";
+import { v4 as uuid } from "uuid";
 
 const ENDPOINT = "https://liquid-portal-api.herokuapp.com/";
 const socket = socketIOClient(ENDPOINT);
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 443;
 const myPeer = new Peer(undefined, {
   secure: true,
   host: "liquid-portal.herokuapp.com",
-  port: 443,
+  port: port,
 });
 const peers = {};
 //
