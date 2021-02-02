@@ -1,0 +1,55 @@
+// Here you can add other styles
+.c-main {
+  padding: 0 !important;
+}
+.container-fluid {
+  padding: 0 !important;
+}
+.sidebar {
+  background-color: rgb(27, 27, 27);
+}
+.sidebar-logo {
+  width: 40%;
+  height: 80%;
+}
+.video-grid-container {
+  max-height: 105vh;
+  padding-top: 25px;
+  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+}
+#video {
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 25px;
+  -webkit-box-shadow: 1px 1px 7px 1px rgba(184, 178, 184, 1);
+  -moz-box-shadow: 1px 1px 7px 1px rgba(184, 178, 184, 1);
+  box-shadow: 1px 1px 7px 1px rgba(184, 178, 184, 1);
+}
+#video-grid {
+  width: 100vw;
+  max-height: 100vh;
+}
+.join-meeting-container {
+  height: 100vh;
+  width: 100vw;
+}
+.join-meeting-card {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 40%;
+  height: 35%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 1px 1px 7px 1px rgba(184, 178, 184, 1);
+  -moz-box-shadow: 1px 1px 7px 1px rgba(184, 178, 184, 1);
+  box-shadow: 1px 1px 7px 1px rgba(184, 178, 184, 1);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
