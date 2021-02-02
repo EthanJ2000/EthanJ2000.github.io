@@ -8,7 +8,6 @@ const myPeer = new Peer(undefined, {
   secure: true,
   host: "liquid-portal.herokuapp.com",
   port: 443,
-  path: "/",
 });
 const peers = {};
 //
