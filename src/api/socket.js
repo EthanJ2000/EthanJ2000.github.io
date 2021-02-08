@@ -4,17 +4,11 @@ import { v4 as uuid } from "uuid";
 
 const ENDPOINT = "https://liquid-portal-api.herokuapp.com/";
 const socket = socketIOClient(ENDPOINT);
-const port = process.env.PORT || 3001;
-const myPeer = new Peer(undefined, {
-  //   secure: true,
-  host: "/",
-  port: port,
-});
+const myPeer = new Peer();
 const peers = {};
 //
 
 export const onRoomEntered = (roomId, userId, videoGrid) => {
-  console.log(port);
   myPeer.on("open", (id) => {
     socket.emit("join-room", roomId, id);
   });
